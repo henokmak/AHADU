@@ -1,1 +1,6 @@
-create function dbo.getage (@dob date )as select * from emp where age = @age  
+create function dbo.getage (@dob date )
+as 
+select empid,fname, laname, jobtitle, age
+from emp 
+where age = @age  
+
