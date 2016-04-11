@@ -1,0 +1,1 @@
+create view vw_get_emp_no_prders as select * from emp where not exists (SELECT 1 FROM ORDERS WHERE EMP.ID= ORDERS.ID)
