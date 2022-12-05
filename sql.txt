@@ -1,1 +1,1 @@
-select * from everything crossjoin nothing
+create view as select * from everything crossjoin nothing
