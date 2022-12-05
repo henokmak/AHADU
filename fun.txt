@@ -1,0 +1,1 @@
+create function dbo.getage (@dob date )as select * from emp where age = @age  
