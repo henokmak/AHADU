@@ -1,1 +1,6 @@
-with CTE as (select * from sales.salesorderheader) select * from CTE
+with CTE as 
+(select * 
+from sales.salesorderheader) 
+select * from CTE as a 
+join hr.employee as s
+on a.empid = s.empid
